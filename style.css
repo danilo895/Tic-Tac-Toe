@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #323232;
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: none; /* Entfernt den Rahmen um die gesamte Tabelle */
+}
+
+td {
+    width: 60px; /* Größe der Zellen */
+    height: 60px; /* Größe der Zellen */
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #f0f0f0;
+}
+
+table td{
+    border: 5px solid white;
+}
+table tr:first-child td{
+    border-top: 0;
+}
+
+table tr td:first-child{
+    border-left: 0;
+}
+
+table tr:last-child td{
+    border-bottom: 0;
+}
+
+table tr td:last-child{
+    border-right: 0;
+}
